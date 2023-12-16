@@ -21,7 +21,7 @@ const App = () => {
 export default App;
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#9bc8de', alignItems: "center" },
+  container: { flex: 1, backgroundColor: '#e3c5fa', alignItems: "center" },
   headTxt: { fontSize: 24, fontWeight: '700', padding: 10 },
   newsIcon: { width: 25, height: 25 }
 })

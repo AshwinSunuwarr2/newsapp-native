@@ -61,9 +61,9 @@ const MyNewsCard = () => {
 
 export default MyNewsCard;
 const styles = StyleSheet.create({
-    newsTitle: { fontSize: 19, fontWeight: '600', color: '#bd394a' },
-    allCardContainer: { flex: 0, flexDirection: 'column', justifyContent: 'center`', backgroundColor: '#fff', alignItems: 'center', margin: -2 },
-    cardContainer: { backgroundColor: '#fff', padding: 4, borderRadius: 5, backgroundColor: '#608d9e', width: '95%', margin: 10, borderRadius: 12, elevation: 4 },
-    newsDescription: { fontSize: 16, color: 'white', letterSpacing: 0.5 },
+    newsTitle: { fontSize: 19, fontWeight: '600', color: '#1f1e1e' },
+    allCardContainer: { flex: 0, flexDirection: 'column', justifyContent: 'center`', backgroundColor: '#78cafa', alignItems: 'center', margin: -2 },
+    cardContainer: { padding: 4, borderRadius: 5, backgroundColor: '#e8f6fc', width: '95%', margin: 10, borderRadius: 12, elevation: 4 },
+    newsDescription: { fontSize: 16, color: 'black', letterSpacing: 0.5 },
     readMore: { color: 'white', marginLeft: 8, color: '#5e484b', fontWeight: '500', alignSelf: 'flex-end', textDecorationLine: 'underline', fontSize: 16, letterSpacing: 0.25 }
 })
