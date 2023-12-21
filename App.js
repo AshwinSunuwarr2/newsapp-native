@@ -1,18 +1,19 @@
 import React from "react";
-import { Text, View, StyleSheet, Image, StatusBar } from "react-native";
+import { Text, View, StyleSheet, Image, StatusBar, ScrollView } from "react-native";
 
 import MyNewsCard from './components/newsCard.js'
+import Categories from "./components/Categories.js";
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <View style={{ flex: 0, flexDirection: 'row', alignItems: 'center' }}>
-        <Text style={styles.headTxt}>News app</Text>
+      <View style={styles.newsNav}>
         <Image source={require('./image/newsicon.png')} style={styles.newsIcon} />
+        <Text style={styles.headTxt}>News app</Text>
       </View>
-
-      <MyNewsCard />
-
+          
+          <MyNewsCard />
+      
       <StatusBar style="auto" />
     </View>
   )
@@ -21,7 +22,8 @@ const App = () => {
 export default App;
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#e3c5fa', alignItems: "center" },
-  headTxt: { fontSize: 24, fontWeight: '700', padding: 10 },
-  newsIcon: { width: 25, height: 25 }
+  container: { flex: 1, backgroundColor: '#D7E6FE' },
+  newsNav:{ flex: 0, flexDirection: 'row', alignItems: 'center', backgroundColor: '#78cafa', elevation: 10, borderBottomLeftRadius: 21, borderBottomRightRadius: 21, padding: 4 },
+  headTxt: { fontSize: 24, fontWeight: '700', padding: 10, color: '#2A2A2B' },
+  newsIcon: { width: 25, height: 25 , marginLeft: 4}
 })
